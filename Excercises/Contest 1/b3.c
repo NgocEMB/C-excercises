@@ -25,3 +25,10 @@ Dòng 1 in ra căn bậc 2 của n với 2 số sau dấu phẩy; Dòng 2 in ra 
 3.87
 2.466
 */
+#include <stdio.h>
+
+int main() {
+
+
+    return 0;
+}
