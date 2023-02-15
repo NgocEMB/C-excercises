@@ -22,3 +22,15 @@ In ra theo yêu cầu đầu bài
 293
 9198
 */
+#include<stdio.h>
+int x,y,z,t;
+int main(){
+    printf("nhap lan luot x,y,z,t: ");
+    scanf("%d%d%d%d", &x, &y, &z, &t);
+    printf("%d, %d, %d, %d\n", x,y,z,t);
+    long long sum = x+y+z+t;
+    printf("Tong 4 chu so = %lld\n",sum);
+    long long bt = x-y+(z*t);
+    printf("bieu thuc co gia tri = %lld",bt);
+    return 0;
+}

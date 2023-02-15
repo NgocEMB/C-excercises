@@ -23,3 +23,16 @@ In ra x^y, nếu x^y có phần thập phân thì in ra 2 số sau dấu phẩy,
 ------Sample Output 1------
 4
 */
+#include<stdio.h>
+int x,y;
+int main(){
+    printf("Nhap co so x va so mu y: ");
+    scanf("%d%d", &x, &y);
+    if(1<=x<=12&&1<=y<=12){
+        double mu = pow(x,y);
+        printf("Ket qua la: %lf", mu);
+    }
+    else{
+        return 0;
+    }
+}
