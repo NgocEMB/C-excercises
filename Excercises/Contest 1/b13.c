@@ -24,3 +24,18 @@ In ra kết quả tương ứng.
 ------Sample Output 1------
 2
 */
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);   
+    if(a==b&&b==c&&a==c)
+        printf("1");
+    else if(a==b||b==c||c==a)
+        printf("2");
+    else if(a*a==b*b+c*c||b*b==a*a+c*c||c*c==a*a+b*b)
+        printf("3"); 
+    else
+        printf("4");
+    return 0;
+}

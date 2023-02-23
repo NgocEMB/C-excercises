@@ -26,9 +26,13 @@ Dòng 1 in ra căn bậc 2 của n với 2 số sau dấu phẩy; Dòng 2 in ra 
 2.466
 */
 #include <stdio.h>
-
+#include<math.h>
 int main() {
-
-
+    int n;
+    scanf("%d",&n);
+    float c2 = sqrt(n);
+    printf("%.2f\n",c2);
+    float c3 = pow(n,(1.0)/3);
+    printf("%.3f",c3);
     return 0;
 }

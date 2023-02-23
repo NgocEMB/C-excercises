@@ -20,3 +20,12 @@ In ra khoảng cách giữa 2 điểm, lấy độ chính xác 2 số sau dấu 
 5.00
 
 */
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x1,y1,x2,y2;
+    scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+    float bt = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+    printf("%.2f",bt);
+    return 0;
+}

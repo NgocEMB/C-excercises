@@ -26,3 +26,19 @@ In ra 4 dòng theo yêu cầu.
 778
 37
 */
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x,y,z,t;
+    scanf("%d%d%d%d", &x,&y,&z,&t);
+    int b1 = fmax(x,y);
+    printf("%d\n", b1);
+    int b2 = fmin(z,t);
+    printf("%d\n",b2);
+    int b3 = fmax(b1,z);
+    printf("%d\n",b3);
+    int b4 = fmin(x,y);
+    int b5 = fmin(b2,b4);
+    printf("%d", b5);       
+    return 0;
+}

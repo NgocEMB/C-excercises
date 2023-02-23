@@ -21,3 +21,13 @@ thì bạn bỏ đi số 0 đó và chỉ in ra số cuối cùng.
 5
 5
 */
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int a = n%10;
+    printf("%d\n",a);
+    int b = n%100;
+    printf("%d",b);
+    return 0;
+}

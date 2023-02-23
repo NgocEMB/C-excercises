@@ -25,3 +25,17 @@ In ra 4 dòng theo yêu cầu, mỗi kết quả cách nhau thêm 1 dòng trốn
 
 285.000
 */
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int b1 = n*2;
+    printf("%d\n",b1);
+    int b2 = n*10;
+    printf("%d\n",b2);
+    int b3 = n/2;
+    printf("%d\n",b3);
+    float b4 = n/2;
+    printf("%.3f",b4);
+    return 0;
+}

@@ -33,3 +33,13 @@ In ra 3 số trên 3 dòng
 6
 6
 */
+#include<stdio.h>
+#include<math.h>
+int main(){
+    double x;
+    scanf("%lf",&x);
+    printf("%d\n", (int)ceil(x));
+    printf("%d\n",(int)floor(x));
+    printf("%d",(int)round(x));
+    return 0;   
+}

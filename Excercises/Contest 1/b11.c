@@ -31,3 +31,16 @@ INVALID
 12555908
 7.6396
 */
+#include<stdio.h>
+int main(){
+    int x,y;
+    scanf("%d%d",&x, &y);
+    printf("%d\n", x+y);
+    printf("%d\n", x-y);
+    printf("%d\n",x*y);
+    if(y!=0){
+        printf("%.4f",(float)x/y);
+    }else
+        printf("INVALID");
+    return 0;
+}

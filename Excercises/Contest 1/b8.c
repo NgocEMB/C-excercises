@@ -25,3 +25,11 @@ SO VO MUA DUOC LA : 3 !!!!!
 ------Sample Output 1------
 SO VO MUA DUOC LA : 40 !!!!!
 */
+#include<stdio.h>
+int main(){
+    int n,x;
+    scanf("%d%d",&n,&x);
+    int a = n/x;
+    printf("So vo mua duoc la: %d!!!!!",a);
+    return 0;
+}
