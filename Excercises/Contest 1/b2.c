@@ -25,11 +25,14 @@ In ra x^y, nếu x^y có phần thập phân thì in ra 2 số sau dấu phẩy,
 */
 #include<stdio.h>
 #include<math.h>
-int x,y;
 int main(){
-    printf("Nhap co so x va so mu y: ");
-    scanf("%d%d", &x, &y);
-    double mu = pow(x,y);
-    printf("Ket qua la: %lf", mu);
+    double x,y;
+    scanf("%lf%lf", &x, &y);
+    double muthuc = pow(x,y);
+    long long munguyen = pow(x,y);
+    if(munguyen-muthuc==0){
+        printf("%d\n",munguyen);
+    }else
+        printf("Ket qua la: %.2lf", muthuc);
     return 0;
 }

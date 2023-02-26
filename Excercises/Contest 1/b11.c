@@ -37,7 +37,7 @@ int main(){
     scanf("%d%d",&x, &y);
     printf("%d\n", x+y);
     printf("%d\n", x-y);
-    printf("%d\n",x*y);
+    printf("%lld\n",1ll*x*y);
     if(y!=0){
         printf("%.4f",(float)x/y);
     }else

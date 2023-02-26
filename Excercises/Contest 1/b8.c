@@ -27,9 +27,9 @@ SO VO MUA DUOC LA : 40 !!!!!
 */
 #include<stdio.h>
 int main(){
-    int n,x;
-    scanf("%d%d",&n,&x);
-    int a = n/x;
-    printf("So vo mua duoc la: %d!!!!!",a);
+    long long n,x;
+    scanf("%lld%lld",&n,&x);
+    long long a = n/x;
+    printf("So vo mua duoc la: %lld!!!!!",a);
     return 0;
 }

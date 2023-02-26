@@ -24,12 +24,12 @@ In ra theo yêu cầu đầu bài
 */
 #include<stdio.h>
 int main(){
-    int x,y,z,t;
-    scanf("%d%d%d%d",&x,&y,&z,&t);
-    printf("%d, %d, %d, %d\n",x,y,z,t);
-    int sum = x+y+z+t;
-    printf("%d\n",sum);
-    int bt = x-y+(z*t);
-    printf("%d",bt);
+    unsigned int x,y,z,t;
+    scanf("%u%u%u%u",&x,&y,&z,&t);
+    printf("%u, %u, %u, %u\n",y,z,x,t);
+    unsigned int sum = x+y+z+t;
+    printf("%u\n",sum);
+    long long bt = x-y+(1ll*z*t);
+    printf("%lld",bt);
     return 0;
 }

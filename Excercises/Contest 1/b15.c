@@ -23,3 +23,23 @@ không mua thiếu cũng không mua thừa.
 10
 
 */
+#include<stdio.h>
+int main(){
+    long long n,l1,l2;
+    scanf("%lld%lld%lld",&n,&l1,&l2);
+    double a = l2/2.0;
+    int sum;
+    if(a<l1){
+        if(n%2==0){
+            sum = l2*(n/2);
+            printf("%d",sum);
+        }else{
+            sum = l2*(n/2)+l1;
+            printf("%d",sum);
+        }
+    }else{
+        sum = l1*n;
+        printf("%d",sum);
+    }   
+    return 0;
+}

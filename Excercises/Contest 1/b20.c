@@ -20,3 +20,13 @@ In ra đáp án của bài toán
 60
 
 */
+#include<stdio.h>
+int main(){
+    int h,m;
+    scanf("%d%d",&h,&m);
+    int giaothua = 24 * 60;
+    int hientai = h * 60 + m;
+    int tet = giaothua - hientai;
+    printf("%d",tet);
+    return 0;
+}

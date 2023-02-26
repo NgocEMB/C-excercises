@@ -31,8 +31,8 @@ int main(){
     scanf("%d",&n);
     int b1 = n*2;
     printf("%d\n",b1);
-    int b2 = n*10;
-    printf("%d\n",b2);
+    long long b2 = 1ll*n*10;
+    printf("%lld\n",b2);
     int b3 = n/2;
     printf("%d\n",b3);
     float b4 = n/2;

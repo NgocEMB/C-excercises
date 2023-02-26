@@ -28,3 +28,23 @@ Nếu không, hãy in "NO" (không có dấu ngoặc kép).
 NO
 
 */
+#include<stdio.h>
+int main(){
+    int a1,a2,a3,b1,b2,b3,n;
+    scanf("%d%d%d",&a1,&a2,&a3);
+    scanf("%d%d%d",&b1,&b2,&b3);
+    scanf("%d",&n);
+    if((a1+a2+a3)%5==0){
+        n = n-(a1+a2+a3)/5;
+    }else
+        n = n-((a1+a2+a3)/5 + 1);
+    if((b1+b2+b3)%10==0){
+        n = n-(b1+b2+b3)/10;
+    }else
+        n = n-((b1+b2+b3)/10 + 1);   
+    if(n >= 0)
+        printf("YES");
+    else    
+        printf("NO");
+    return 0;
+}

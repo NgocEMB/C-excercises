@@ -25,3 +25,15 @@ leo lên thỏa mãn điều kiện in - 1.
 6
 
 */
+#include<stdio.h>
+int main(){
+    int n,m;
+    scanf("%d%d",&n,&m);
+    int x = n/2.0;
+    int bt = (x+m-1)/m*m;
+    if(bt<=n){
+        printf("%d",bt);
+    }else
+        printf("-1");
+    return 0;
+}

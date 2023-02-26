@@ -19,3 +19,12 @@ In ra tổng của cấp số cộng
 759924842
 
 */
+#include<stdio.h>
+int main(){
+    int n,u1,d;
+    scanf("%d%d%d", &n,&u1,&d);
+    long long un = u1+(1ll*(n-1)*d);
+    long long s = 1ll*(n*(u1+un))/2;
+    printf("%lld",s);
+    return 0;
+}

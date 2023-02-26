@@ -18,3 +18,31 @@ In ra số lớn nhất và nhỏ nhất.
 839 272
 
 */
+#include<stdio.h>
+int main(){
+    long long a,b,c,d;
+    scanf("%lld%lld%lld%lld",&a,&b,&c,&d);
+    long long max = a;
+    long long min = a;
+    if(b>max){
+        max = b;
+    }
+    if(b<min){
+        min = b;
+    }
+    if(c>max){
+        max = c;
+    }
+    if(c<min){
+        min = c;
+    }
+    if(d>max){
+        max = d;
+    }
+    if(d<min){
+        min = d;
+    }
+    printf("%lld\n",max);
+    printf("%lld",min);
+    return 0;
+}

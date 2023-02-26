@@ -25,7 +25,7 @@ In ra khoảng cách giữa 2 điểm, lấy độ chính xác 2 số sau dấu 
 int main(){
     int x1,y1,x2,y2;
     scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
-    float bt = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
-    printf("%.2f",bt);
+    double bt = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+    printf("%.2lf",bt);
     return 0;
 }

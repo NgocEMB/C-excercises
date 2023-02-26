@@ -37,3 +37,49 @@ NO
 YES
 YES
 */
+#include<stdio.h>
+int main(){
+    unsigned int n;
+    scanf("%u",&n);
+    if(n%2==0)              /*1*/
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n%3==0&&n%5==0)      /*2*/
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n%3==0&&n%7!=0)      /*3*/
+        printf("YES\n");
+    else    
+        printf("NO\n");
+    if(n%3==0 || n%7==0)    /*4*/
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n>30&&n<50)             /*5*/
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n>30 && (n%2==0||n%3==0||n%5==0)) /*6*/
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if((n>=10 && n<=99)&&(n%10==2||n%10==3||n%10==5||n%10==7))
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n<100 && n%23==0)
+        printf("YES\n");
+    else    
+        printf("NO\n");
+    if(n<10||n>20)
+        printf("YES\n");
+    else
+        printf("NO\n");
+    if(n%10==0 || n%10 ==3 || n%10 == 6 || n%10 ==9)
+        printf("YES\n");
+    else
+        printf("NO\n");
+    return 0;
+}
