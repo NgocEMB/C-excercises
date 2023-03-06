@@ -23,3 +23,15 @@ E E E E E
 F F F F F F 
 
 */
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    for(int cot=1;cot<=n;cot++){
+        for(int hang=1;hang<=cot;hang++){
+            printf("%c ", cot+64);
+        }
+        printf("\n");
+    }
+    return 0;
+}

@@ -40,3 +40,45 @@ In ra hình số theo mẫu
 5 9 12 14 15
 
 */
+#include<stdio.h>
+int main(){
+    int n;
+    int tang=0;
+    scanf("%d",&n);
+    for(int cot=0; cot<n;cot++){
+        for(int hang=0; hang<n;hang++){
+            tang+=1;
+            printf("%d ",tang);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for (int cot=1; cot<=n; cot++) {
+        for (int hang=cot;hang<=cot+n-1; hang++) {
+            printf("%d ", hang);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for (int cot=1; cot<=n; cot++) {
+        for (int hang=1; hang<=n-cot; hang++) {
+            printf("~");
+        }
+        for (int giatri=1; giatri<=cot; giatri++) {
+            printf("%d", cot);
+        }
+        printf("\n");
+    } 
+    printf("\n");
+    for(int hang=1;hang<=n;hang++){
+        int temp = hang;
+        int giamdan = n;
+        for(int cot=1;cot<=hang;cot++){
+            printf("%d ",temp);
+            temp = temp + (giamdan - cot);
+            
+        }
+        printf("\n");
+    }   
+    return 0;
+}

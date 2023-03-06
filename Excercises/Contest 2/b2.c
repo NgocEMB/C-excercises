@@ -40,3 +40,57 @@ In ra hình sao theo mẫu
 5 5 5 5 5 
 
 */
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    for(int cot=0;cot<n;cot++){
+        for(int hang=0;hang<n;hang++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(int cot=0;cot<n;cot++){
+        for(int hang=0;hang<n;hang++){
+            if(cot>0&&cot<n-1){
+                if(hang>0&&hang<n-1){
+                    printf(" ");
+                }else{
+                    printf("*");
+                }
+            }else
+                printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+        for(int cot=0;cot<n;cot++){
+        for(int hang=0;hang<n;hang++){
+            if(cot>0&&cot<n-1){
+                if(hang>0&&hang<n-1){
+                    printf("#");
+                }else{
+                    printf("*");
+                }
+            }else
+                printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(int cot=0;cot<n;cot++){
+        for(int hang=0;hang<n;hang++){
+            if(cot>0&&cot<n-1){
+                if(hang>0&&hang<n-1){
+                    printf(" ");
+                }else{
+                    printf("%d ",cot+1);
+                }
+            }else
+                printf("%d ",cot+1);
+        }
+        printf("\n");
+    }
+    return 0;
+}

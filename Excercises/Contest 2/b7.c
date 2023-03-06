@@ -22,3 +22,21 @@ In ra hình tương ứng
         * 
 
 */
+#include<stdio.h>
+int main(){
+  int n;
+  scanf("%d",&n);
+  for(int hang=n;hang>=1;hang--){
+    for(int cot=1;cot<=n;cot++){
+      if(cot<=n-hang){
+        printf("  ");
+      }else
+        printf("* ");
+    }
+    for(int cot=1;cot<=hang-1;cot++){
+      printf("* ");
+    }
+    printf("\n");
+  }
+  return 0;
+}

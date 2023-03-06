@@ -18,3 +18,19 @@ Số lượng chữ số của n
 9
 
 */
+#include<stdio.h>
+int main(){
+    unsigned long long n;
+    scanf("%llu",&n);
+    int count=0;
+    if(n==0){
+        count++;
+    }
+    while(n!=0){
+        n = n/10;
+        count++;
+        
+    } 
+    printf("%d",count);
+    return 0;
+}

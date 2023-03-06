@@ -36,3 +36,21 @@ In ra hình tương ứng
 9               9 
 
 */
+#include<stdio.h>
+int main(){
+  int n;
+  scanf("%d",&n);
+  for(int hang=1;hang<=n;hang++){
+    for(int cot=1;cot<=n;cot++){
+      if(hang==cot){
+        printf("%d ",hang);
+      }else if(hang+cot==n+1){
+        printf("%d ",hang);
+      }
+      else
+        printf("  ");  
+    }
+    printf("\n");
+  }
+  return 0;
+}
