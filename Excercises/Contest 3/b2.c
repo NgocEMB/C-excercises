@@ -23,3 +23,27 @@ In ra các số cách nhau một khoảng trắng hoặc in ra NONE nếu không
 Số 458 là số chẵn và ở chỉ số 2, số 200 là số chẵn ở ở chỉ số 4
 
 */
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n;
+    int a[1000];
+    char check = 0;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        if(a[i] % 2 == 0 && i % 2 == 0) {
+            printf("%d ", a[i]);
+            check = 1;
+        }
+    }
+    if(check != 1)  printf("NONE");
+    return 0;
+}

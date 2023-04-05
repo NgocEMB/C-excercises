@@ -14,9 +14,39 @@ In ra kết quả của bài toán
 
 ------Sample Input 0------
 9
--992414 993205 998602 990785 -993397 990527 995429 991288 -992221 
-
+1000000 -993205 998602 990785 -993397 990527 995429 991288 -992221 
+1       1       0       1       1      1       0       1       1    --> check
 ------Sample Output 0------
 -992414 993205 990785 -993397 990527 991288 -992221 
 
 */
+#include <stdio.h>
+#include <math.h>
+
+int a[1000000]; //DATA
+
+int main()
+{
+    int n;
+    int temp = 1000000;
+    scanf("%d", &n);
+
+    //O(n)  - O(2n)
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+        if(i >= 1)
+        {
+            if((a[i-1] >= 0 && a[i] < 0) || (a[i-1] < 0 && a[i] >= 0))
+            {
+                if(a[i-1] != temp)
+                    printf("%d ", a[i-1]); //ko in
+                printf("%d ", a[i]);
+                temp = a[i];
+            }
+        }
+    }
+
+
+    return 0;
+}

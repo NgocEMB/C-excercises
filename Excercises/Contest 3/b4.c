@@ -20,3 +20,48 @@ Fibonacci nào thì in ra "NONE".
 1597 0 
 
 */
+#include <stdio.h>
+#include <math.h>
+
+long long fb[93];
+long long a[1000000]; //DATA
+
+//O(90)
+void fibo()
+{
+    fb[0] = 0;
+    fb[1] = 1;
+    for (int i = 2; i <= 92; i++)   //92: 7540113804746346429
+    {
+        fb[i] = fb[i-1] + fb[i-2];
+    }
+}
+
+//O(93)
+int check_fibo(long long n)
+{
+    for (int i = 0; i <= 92; i++)
+    {
+        if(n == fb[i]) return 1;
+    }
+    return 0;
+}
+
+int main()
+{
+    int n;
+    
+    scanf("%d", &n);
+    fibo();
+    //O(n)
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%lld", &a[i]);
+        if(check_fibo(a[i]))
+        {
+            printf("%lld ", a[i]);
+        }
+    }
+
+    return 0;
+}

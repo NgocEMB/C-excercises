@@ -26,3 +26,40 @@ In ra đáp án của bài toán lấy 3 số sau dấu phẩy.
 ------Sample Output 1------
 3.500
 */
+
+#include <stdio.h>
+#include <math.h>
+
+int nto(int x) {
+    if(x < 2) return 0;
+    else {
+        for(int i = 2; i <= sqrt(x); i++){
+            if(x % i == 0) return 0;
+        }
+    }
+    return 1;
+}
+
+int main() {
+    int n;
+    int a[1001];
+    int sum = 0;
+    int count = 0;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        if(nto(a[i])) {
+            sum += a[i];
+            ++count;
+        }
+    }
+    printf("%.3f", (double)sum/count);
+    
+    return 0;
+}
