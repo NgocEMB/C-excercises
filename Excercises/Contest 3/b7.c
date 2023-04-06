@@ -27,3 +27,27 @@ NOT FOUND
 ------Sample Output 1------
 1 3 2 5
 */
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n, x;
+    int a[1000];
+    int mark = 0;
+
+    scanf("%d %d",&n,&x);
+    for(int i = 0; i < n; i++){
+        scanf("%d", &a[i]);
+        if(a[i] == x && mark != 1) {
+            mark = 1;
+            n--;
+            i--;
+        }
+    }
+    if(mark == 0) printf("NOT FOUND");
+    else {
+        for(int i = 0; i < n; i++){
+            printf("%d ", a[i]);
+        }
+    }
+}

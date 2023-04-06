@@ -14,7 +14,7 @@ In ra giá trị có số lần xuất hiện nhiều nhất kèm theo tần su�
 
 ------Sample Input 0------
 5
-9 4 0 4 5 
+9 4 0 4 5
 
 ------Sample Output 0------
 4 2
@@ -34,3 +34,36 @@ In ra giá trị có số lần xuất hiện nhiều nhất kèm theo tần su�
 1 1
 
 */
+#include <stdio.h>
+#include <math.h>
+
+int freq[1000001];
+
+int main() {
+    int n;
+    int a[1000];
+    scanf("%d", &n);
+
+    int max = 0;
+    for(int i = 0; i < n; i++) { //4 - 4 5 6 4 3 6 6 5
+        scanf("%d", &a[i]);
+        freq[a[i]]++; // 0 0 0 1 2 2 3 0 0 0 0 0 0 ... 5
+        if(max < a[i]) // ts = 2
+        {
+            max = a[i];
+        }
+    }
+    
+    int ts = 0;
+    int value = 0;
+    for(int i = 0; i <= max; i++) {
+        if(freq[i] > ts) // ts = 2
+        {
+            ts = freq[i];
+            value = i;   // value = 4
+        }
+    }
+    printf("%d %d", value, ts);
+
+    return 0;
+}

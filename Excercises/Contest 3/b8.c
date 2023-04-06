@@ -18,9 +18,41 @@ In ra CHAN nếu mảng chẵn, LE nếu mảng lẻ, CHANLE nếu mảng chẵn
 3 
 9 7 9 
 7 5 5 
-3 
+3 (EOF = Ctrl + D)
 
 ------Sample Output 0------
 LE
 
 */
+#include<stdio.h>
+#include<math.h>
+
+//scanf: return -1 neu khong phai so
+
+int main(){
+    int a[1000];
+    int temp;
+    int n = 0;
+    int chan = 0, le = 0;
+
+    while (scanf("%d", &temp) != -1)
+    {
+        a[n] = temp;
+        n++;
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        if(a[i] % 2 == 0){
+            chan++;
+        }
+        if(a[i] % 2 != 0){
+            le++;
+        }
+    }
+    if(chan > le) printf("CHAN");
+    else if(chan < le) printf("LE");
+    else printf("CHANLE");
+    
+    return 0;
+}

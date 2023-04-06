@@ -25,3 +25,30 @@ In ra nhiều dòng, mỗi dòng gồm giá trị và tần suất viết cách 
 3 1
 
 */
+#include<stdio.h>
+#include<math.h>
+
+int freq[1000001];
+
+int main(){
+    int n;
+    int a[1000];
+    scanf("%d",&n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+        freq[a[i]]++;
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        if (freq[a[i]] != 0)
+        {
+            printf("%d %d\n", a[i], freq[a[i]]);
+            freq[a[i]] = 0;
+        }
+    }
+    
+    return 0;
+}
