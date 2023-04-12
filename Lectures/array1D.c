@@ -16,7 +16,7 @@ void nhap(int a[], int length) {
 }
 
 int main() {
-    int a[MAX];
+    int a[MAX] = {1,23,4};
     int size_arr;
     printf("Nhap so luong phan tu mang: ");
     scanf("%d", &size_arr);
