@@ -1,7 +1,7 @@
 /*
 [Mảng 2 Chiều]. Bài 9. Đếm các phần tử là số nguyên tố trên đường chéo chính và phụ
-Cho ma trận vuông cỡ NxN gồm N hàng, mỗi hàng N cột. Hãy đếm các số nguyên tố trên đường chéo chính và đường chéo phụ, mỗi phần tử là số nguyên tố
-thỏa mãn chỉ đếm 1 lần.
+Cho ma trận vuông cỡ NxN gồm N hàng, mỗi hàng N cột. Hãy đếm các số nguyên tố trên đường chéo chính và 
+đường chéo phụ, mỗi phần tử là số nguyên tố thỏa mãn chỉ đếm 1 lần.
 
 Input Format
 
