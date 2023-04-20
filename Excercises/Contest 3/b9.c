@@ -45,10 +45,10 @@ int main() {
     scanf("%d", &n);
 
     int max = 0;
-    for(int i = 0; i < n; i++) { //4 - 4 5 6 4 3 6 6 5
+    for(int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
-        freq[a[i]]++; // 0 0 0 1 2 2 3 0 0 0 0 0 0 ... 5
-        if(max < a[i]) // ts = 2
+        freq[a[i]]++; 
+        if(max < a[i])
         {
             max = a[i];
         }
@@ -57,10 +57,10 @@ int main() {
     int ts = 0;
     int value = 0;
     for(int i = 0; i <= max; i++) {
-        if(freq[i] > ts) // ts = 2
+        if(freq[i] > ts)
         {
             ts = freq[i];
-            value = i;   // value = 4
+            value = i;   
         }
     }
     printf("%d %d", value, ts);
